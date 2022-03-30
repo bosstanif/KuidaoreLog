@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* 基本環境 */
+html{
+    font-size: 100%;
+}
+
+body{
+    font-family:"yu Gothic Medium","游ゴシック Medium",YuGothic,"游ゴシック体","ヒラギノ角ゴ Pro W3",sans-serif;
+    line-height: 1.7;
+    color: #432;
+
+}
+
+
+/*  口コミ投稿  */
+.h1-rev_tweet{
+    color: rgb(255, 166, 0);
+    padding: 6px 0;
+    margin: 20px auto;
+    width: 200px;
+    align-content: center;
+}
+
+.form-rev_tweet {
+    padding: 6px 0;
+    margin: 20px auto;
+    width: 300px;
+
+
+}
+
+
+.ul-rev_tweet {
+    padding: 6px 0;
+    margin: 20px auto;
+    width: 300px;
+    list-style: none;
+    display: flexbox;
+
+
+}
+
+li{
+    list-style: none;
+}
+
+.div-rev_tweet {
+    padding: 6px 0;
+    margin: 20px auto;
+    width: 200px;
+
+
+}

@@ -1,0 +1,61 @@
+@charset "UTF-8"; /*コードの文字化けを防ぐ*/
+
+/*ユーザー登録NG*/
+.h1_u_reg_ng{
+    color: rgb(236, 70, 32);
+    padding: 6px 0;
+    margin: 20px auto;
+    width: 100％;
+}
+
+.div_u_reg_ng{
+    padding: 6px 0;
+    margin: 20px auto;
+    width: 100％;
+
+}
+
+
+/*  ユーザー登録完了へ進む時  */
+.h1_u_reg_check{
+    color: rgb(255, 153, 0);
+    padding: 6px 0;
+    margin: 20px auto;
+    width: 420px;
+}
+
+
+
+.ul_u_reg_check {
+    padding: 6px 0;
+    margin: 20px auto;
+    width: 300px;
+    list-style: none;
+    display: flexbox;
+
+}
+
+.div_u_reg_check {
+    padding: 6px 0;
+    margin: 20px auto;
+
+
+
+}
+
+/*userRegisterCheck.jsp内ボタン*/
+.a_u_reg_check_button{/*ボタンのクラスにフォントや色、角丸、余白の指定を入れている*/
+	font-size: 0.8rem;
+	color: #FFFFFF;
+	background: #82AD24;
+	border-radius: 10px;
+	border: solid;
+	border-color: #B1B1B1;
+	padding:7px 10px;
+	margin-bottom: 3px;
+    text-decoration: none;
+}
+.a_u_reg_check_button:hover{/*カーソルをボタンに重ねた時の色を指定 ちとテキトーな色にしてある*/
+	background: #F8F8F8
+}
+

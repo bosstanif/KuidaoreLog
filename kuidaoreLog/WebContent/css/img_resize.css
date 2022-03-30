@@ -1,0 +1,9 @@
+/* img{
+	max-width: 40%;画像の大きさの指定 inheritを指定すると継承
+	width: 100rem;横のナビゲーションが縦文字になるので中止
+} */
+/*画像のリサイズ「*/
+.leftimg {
+	display: flex;
+	justify-content: flex-start;
+}

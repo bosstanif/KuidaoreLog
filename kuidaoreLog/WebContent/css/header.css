@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* <!-- 最終更新日時0227 --> */
+
+/*HEADER*/
+/*@charset "UTF-8"; *//* ここ不要っぽいので削除0226 */
+
+/*ロゴとナビゲーションメニューを横並び(両端に設置)にする*/
+.page_header_flex{
+	display: flex;
+	justify-content:space-between;/*両端に設置の指定*/
+}
+/*ロゴとナビゲーションメニュー全体の横幅を調整。[←この部分→]
+先にhtml側にラッパークラスを追記*/
+.header_wrapper{
+	max-width:1100px;/*横幅最大1100pxの指定*/
+	margin:0 auto;/*ナビゲーションバー全体の余白指定*/
+	padding:0 4%;/*スマートフォン向け余白の指定*/
+}
+	/*これで左右に余白ができてナビゲーションバー全体の中央に配置ができる*/
+
+/*下線を引く*/
+.header_border_underline{
+	font-size: 1.375rem;
+	padding: 0 8px 8px;
+	border-bottom: 1.5px #DFD0BF solid;
+	font-weight: normal;/*文字の太さを指定*/
+}
+
+/*head_main_navの装飾*/
+.header_main_nav{
+	display:flex;/*display.flexを使う。これで適用箇所のliが横並びにできる*/
+	font-size: 1rem;/*fontサイズの指定remは拡大縮小しても追従するタイプの単位*/
+	text-transform: uppercase;/*text-transformとはテキストにおける英数字の大文字、小文字の表示を指定するプロパティです*/
+	margin-top:14px;/*上部余白の指定*/
+	list-style: none;/*list-styleとはリストのスタイルを一括で指定するプロパティです。*/
+}
+
+.header_main_nav li{/* header_main_navが有効範囲内のliで指定している部分の左に余白 */
+	margin-left: auto;
+}
+
+.header_main_nav a{/*header_main_navが有効範囲内のaタグ内のテキストを青色で記載*/
+	color:#0066CC;
+}
+.header_main_nav a:hover{/*マウスカーソルをあわせた時の処理。色変更*/
+color:#FFAA00;
+}
+
+/*ロゴ画像のサイズと余白の調整*/
+
+.header_img_logo{
+	width:170px;/*ロゴの横幅*/
+	margin-top:10px;/*上部余白の指定*/
+	margin-left:20px;/*上部余白の指定*/
+}
+
+.header_span_item1{/*spanタグ有効範囲内のli要素が1つのときの右揃えテキスト余白を調整*/
+	margin-right: 20px;
+	text-align: right;
+}
+
+.header_bg_color{
+background-image: linear-gradient(#FFFFF0,#FFFFFF);
+}
+
+/*下線を引く2*/
+.border2{
+	font-size: 1.375rem;
+	padding: 0 8px 8px;
+	border-bottom: 2px #DFD0BF solid;
+	font-weight: normal;
+}
+
+

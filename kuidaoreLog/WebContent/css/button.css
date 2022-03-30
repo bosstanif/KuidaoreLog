@@ -1,0 +1,81 @@
+@charset "UTF-8"; /*コードの文字化けを防ぐ*/
+
+/*header内ボタン*/
+.header_button{/*ボタンのクラスにフォントや色、角丸、余白の指定を入れている*/
+	font-size: 1.375rem;
+	color: #4F4F4F;
+	background: #FFFCFC;
+	border-radius: 5px;
+	border: solid;
+	border-color: #B1B1B1;
+	padding:18px 32px;
+}
+.header_button:hover{/*カーソルをボタンに重ねた時の色を指定 ちとテキトーな色にしてある*/
+	background: #F8F8F8
+}
+
+/*index.jsp内ボタン*/
+.index_button{/*ボタンのクラスにフォントや色、角丸、余白の指定を入れている*/
+	font-size: 1.375rem;
+	color: #4F4F4F;
+	background: #FFFCFC;
+	border-radius: 5px;
+	border: solid;
+	border-color: #B1B1B1;
+	padding:18px 32px;
+}
+.index_button:hover{/*カーソルをボタンに重ねた時の色を指定 ちとテキトーな色にしてある*/
+	background: #F8F8F8
+}
+
+
+/*HTML CSS Result Skip Results Iframe
+*/
+::before,
+::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+ */
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-radius-solid {
+  background: #f1e767;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f1e767), to(#feb645));
+  background: -webkit-linear-gradient(top, #f1e767 0%, #feb645 100%);
+  background: linear-gradient(to bottom, #f1e767 0%, #feb645 100%);
+}
+
+a.btn-radius-solid:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#f1e767), to(#feb645));
+  background: -webkit-linear-gradient(bottom, #f1e767 0%, #feb645 100%);
+  background: linear-gradient(to top, #f1e767 0%, #feb645 100%);
+}

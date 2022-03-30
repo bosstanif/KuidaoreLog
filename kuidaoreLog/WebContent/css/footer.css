@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* <!-- 最終更新日時0227 --> */
+
+/*FOOTER*/
+
+/*@charset "UTF-8"; *//* ここ不要っぽいので削除0226 */
+
+.footer{/* ここ追加0226 */
+/* 	display:flex;
+	justify-content:center;
+ */	/* ここまで　だけど、無くてもtext-ailgnで機能してるっぽいので無効0226 */
+	color: #73b553;
+	font-size: 20px;
+	text-align: center;
+	/* フッター部のフォントを以下のように指定 */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin-top: auto;
+}
+
+/* body,
+footer_wrapper{
+	flex-direction: column;
+	min-height: 85vh;
+
+} */
+
+body,
+#footer_wrapper{
+	flex-direction: column;
+	min-height: 85vh;
+}
+
+/*ロゴとナビゲーションメニューを横並び(両端に設置)にする*/
+.page_footer_flex{
+	display: flex;
+	justify-content:space-between;/*両端に設置の指定*/
+}
+/*ロゴとナビゲーションメニュー全体の横幅を調整。[←この部分→]
+先にhtml側にラッパークラスを追記*/
+.footer_wrapper{
+	max-width:1100px;/*横幅最大1100pxの指定*/
+	margin:0 auto;/*ナビゲーションバー全体の余白指定*/
+	padding:0 4%;/*スマートフォン向け余白の指定*/
+}
+	/*これで左右に余白ができてナビゲーションバー全体の中央に配置ができる*/
+
+/*上線を引く*/
+.footer_border_underline{
+	font-size: 1.375rem;
+	padding: 0 8px 8px;
+	border-top: 1.5px #DFD0BF solid;
+	font-weight: normal;/*文字の太さを指定*/
+}
+
+/*head_main_navの装飾*/
+.footer_main_nav{
+	display:flex;/*display.flexを使う。これで適用箇所のliが横並びにできる*/
+	font-size: 1rem;/*fontサイズの指定remは拡大縮小しても追従するタイプの単位*/
+	margin-top:14px;/*上部余白の指定*/
+	list-style: none;/*list-styleとはリストのスタイルを一括で指定するプロパティです。*/
+}
+
+.footer_main_nav li{/* footer_main_navが有効範囲内のliで指定している部分の左に余白 */
+	margin-left: auto;
+}
+
+.footer_main_nav a{/*footer_main_navが有効範囲内のaタグ内のテキストを青色で記載*/
+	color:#0066CC;
+}
+.footer_main_nav a:hover{/*マウスカーソルをあわせた時の処理。色変更*/
+color:#FFAA00;
+}
+
+/*ロゴ画像のサイズと余白の調整*/
+
+.footer_img_logo{
+	width:170px;/*ロゴの横幅*/
+	margin-top:10px;/*上部余白の指定*/
+	margin-left:20px;/*上部余白の指定*/
+}
+
+.footer_span_item1{/*spanタグ有効範囲内のli要素が1つのときの右揃えテキスト余白を調整*/
+	margin-right: 20px;
+	text-align: right;
+}
+
+.footer_bg_color{
+background-image: linear-gradient(#FFFFF0,#FFFFF0);
+}
+
+
+/*FOOTER*//*これ以下は書き方かクラス名の問題か多分機能してないっぽい*/
+/* 正しくは多分こういう書き方 */
+/* .footer p{} */
+footer .line p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	/* コピーライトの部分のフォント */
+}
+footer .line a {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	/* サイト名のフォント */
+}
+footer .line {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/* 最下部全体のフォント */
+}
+
+
+
+

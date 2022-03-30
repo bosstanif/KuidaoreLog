@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+span {
+	color: red;
+}
+
+p,userRegister{
+	background-color: #efe8d9;
+	padding-bottom: 60px;
+
+}
+
+
+
+
+form{
+	width: 640px;
+	margin-top: 400px;
+	margin: 0 auto;
+	margin-bottom: 0;
+}
+
+p{
+	width: 320px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h1,header,footer{
+	text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type= "date"],
+input[type="tel"],
+input[type="email"]
+{
+
+	width: 100%;
+	margin-top: 5px;
+	padding: 4px 8px;
+}

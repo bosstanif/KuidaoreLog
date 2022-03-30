@@ -1,0 +1,204 @@
+@charset "UTF-8"; /*コードの文字化けを防ぐ*/
+
+/*共通部分*/
+html{
+	font-size:100%;/*ユーザの設定した文字サイズを正しく反映*/
+	/* ↓これ適用しても機能してないっぽく見えるけど、
+ブラウザのウィンドウサイズ横幅を限界まで縮小したときに効果あり。
+このクラス適用コンテンツ幅の最小幅を決める。
+食べログでも適用されてる。
+個別でクラス指定するより、<html>とかタグ全体に適用したほうがいい効果かも。
+スマホとか画面サイズ小さいやつよう？ */
+	width:100%;/*調べたところ画面幅は初期値100％で良さそう*/
+/* 	width: 640px; */
+	margin-right: auto;
+	margin-left: auto;
+
+
+}
+
+
+
+body{
+	font-family: ゴシック"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";/*書体の指定*/
+	line-height:1.7; /*行の高さの指定*/
+	color:#432;/*色の指定*/
+}
+
+a{
+	text-decoration: none;/*<a>タグの傍線の指定*/
+}
+
+img{/*画像の大きさの初期値指定することで、画像が親要素より大きくなるのを防ぐ*/
+	max-width: 100%;
+}
+
+/*背景いっぱいに大きな画像を投影する*/
+.bg_fullimg {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url("https://jajaaan.co.jp/wp-content/uploads/2020/01/inside-sales.jpg")
+    center / cover;
+}
+
+
+/* ここから須佐美@charset "UTF-8";
+クラス名などわかりやすく、他ページにこのスタイルを適用しても影響で内容に改変
+*/
+
+.mainImage_size {
+	height: 250px;
+}
+
+.logo_size {
+	width: 100px;
+	height: auto;
+}
+
+.h1_sitetitle1 {
+	color: orange;
+	font-size: 40px;
+}
+
+.p_index_font{
+	color: #73b553;
+	font-size: 20px;
+}
+/* これ適用しても機能してないっぽく見えるけど、
+ブラウザのウィンドウサイズ横幅を限界まで縮小したときに効果あり。
+このクラス適用コンテンツ幅の最小幅を決める。
+食べログでも適用されてる。
+個別でクラス指定するとヘッダ部とかフッタ部に反映されないので違和感しかないので
+<html>とかタグ全体に適用したほうがいい効果かも。なのでこれはひとまず未使用
+スマホとか画面サイズ小さいやつよう？ */
+.div_width_index {
+	width: 640px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+	/* クラス指定した部分のテキストなどを画面中央部に寄せる処理
+	ヘッダやフッタには別個に指定しておく*/
+.text_center {
+	text-align: center;
+}
+
+/*要素の右寄せ*/
+.text_right{
+	text-align:right;
+}
+
+/*要素の左寄せ*/
+.text_left{
+	 text-align:left;
+}
+
+/*フォントサイズを縮小*/
+.text_min50{
+ font-size: 50%;
+}
+
+/*要素のちょい位置修正用*/
+.margin_80px_right{
+	margin-right: 80px;
+}
+
+/*要素のちょい位置修正用2*/
+.margin_20px_right{
+	margin-right: 20px;
+}
+
+/* button.cssが何故か読み込めず機能しないのでこちらに記載 */
+/*header内ボタン*/
+.header_button{/*ボタンのクラスにフォントや色、角丸、余白の指定を入れている*/
+	font-size: 1.375rem;
+	color: #4F4F4F;
+	background: #FFFCFC;
+	border-radius: 5px;
+	border: solid;
+	border-color: #B1B1B1;
+	padding:18px 32px;
+}
+.header_button:hover{/*カーソルをボタンに重ねた時の色を指定 ちとテキトーな色にしてある*/
+	background: gray;
+}
+
+/*index.jsp内ボタン*/
+.index_button{/*ボタンのクラスにフォントや色、角丸、余白の指定を入れている*/
+	font-size: 1rem;
+	color: #FFFFFF;
+	background: #82AD24;
+	border-radius: 10px;
+	border: solid;
+	border-color: #B1B1B1;
+	padding:7px 14px;
+	margin-bottom: 5px;
+
+}
+.index_button:hover{/*カーソルをボタンに重ねた時の色を指定 ちとテキトーな色にしてある*/
+	background: gray;
+}
+
+
+/*register関連jsp内の専用ボタン*/
+.register_button{/*ボタンのクラスにフォントや色、角丸、余白の指定を入れている*/
+	font-size: 1rem;
+	color: #FFFFFF;
+	background: #82AD24;
+	border-radius: 10px;
+	border: solid;
+	border-color: #B1B1B1;
+	padding:7px 14px;
+	margin-bottom: 5px;
+
+}
+.register_button:hover{/*カーソルをボタンに重ねた時の色を指定 ちとテキトーな色にしてある*/
+	background: gray;
+}
+
+
+
+/*レビュー用のCSS*/
+
+	/* 動作の基本となるcss */
+
+	.rating {
+	  display: inline-flex;
+	  flex-direction: row-reverse;
+	}
+
+	.hidden--visually {
+		border: 0;
+		clip: rect(1px 1px 1px 1px);
+		clip: rect(1px, 1px, 1px, 1px);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+
+	/* ここでデザインの変更 */
+
+	.rating__label {
+	  cursor: pointer;
+	  color: gray;
+	  padding-left: 0.25rem;
+	  padding-right: 0.25rem;
+	}
+
+	.rating__icon::before {
+	  content: "★";
+	  font-size: 2rem;
+	  padding: 0.5rem;
+	}
+
+	.rating__input:hover ~ .rating__label {
+	  color: lightgray;
+	}
+
+	.rating__input:checked ~ .rating__label {
+	  color: #ffbb00;
+	}

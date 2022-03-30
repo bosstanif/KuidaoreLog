@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/* 最終更新0228 */
+
+/*  フォーム部分 */
+
+/*テーブルタイプのフォーム*/
+
+
+.contact {/*フォーム全体を囲うタグ*/
+    width: 740px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.contact-ttl {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-table {/*右のテーブル列と左の枠に適用*/
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+
+}
+
+.contact-item,
+.contact-body {/*右のテーブル列に適用効果*/
+    padding: 20px;
+    border: 1px solid #ccc;
+    }
+
+.contact-item {/*左のテーブルの背景色など*/
+    text-align: left;
+    width: 35%;
+    background-color: #FAF8F5;
+}
+
+.contact-body {
+    width: 70%;
+}
+
+.form-text {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    max-width: auto;
+}
+
+.form-text_mini {
+    width: 46.5%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    max-width: auto;
+
+}
+
+
+.contact-sex + .contact-sex {
+    margin-left: 10px;
+}
+
+.contact-sex-txt {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.form-select {
+    width: 180px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/*この辺のスキル関連は今は不要*/
+.contact-skill {
+    display: block;
+}
+
+.contact-skill + .contact-skill {
+    margin-top: 10px;
+}
+
+.contact-skill-txt {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.contact-submit {/*黒くて丸めなログインのボタン。サブミット用*/
+    width: 250px;
+    background-color: #82AD24;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 100vh;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+/*必須のところを囲うアイテム*/
+
+/*p2*//*必須：のところ*/
+.Form-Item-Label-Required {
+  border-radius: 6px;
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 4px;
+  width: 48px;
+  display: inline-flex;
+  text-align: center;
+  justify-content:center;
+  background: #E64C30;
+  color: #fff;
+  font-size: 14px;
+}
+
+/*要素の右寄せ*/
+.text_right{
+	text-align:right;
+}
+
+/*要素の左寄せ*/
+.text_left{
+	 text-align:left;
+}
+
+/*後続要素が影響を受けないようにフロートをクリア*/
+.float_clear{
+	clear: left;
+}
+
+

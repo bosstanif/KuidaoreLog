@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* NG画面へ進むとき*/
+.h1_r_reg_ng{
+    color: rgb(236, 70, 32);
+    padding: 6px 0;
+    margin: 20px auto;
+    width: 160px;
+
+}
+
+.div_r_reg_ng{
+    padding: 6px 0;
+    margin: 20px auto;
+    width: 500px;
+
+}
+
+
+/*  ユーザー登録完了へ進む時  */
+.h1_r_reg_check {
+    color: rgb(255, 153, 0);
+    padding: 6px 0;
+    margin: 20px auto;
+    width: 420px;
+}
+
+
+
+.ul_r_reg_check {
+    padding: 6px 0;
+    margin: 20px auto;
+    width: 200px;
+    list-style: none;
+    display: flexbox;
+
+}
+
+.div_r_reg_check {
+    padding: 6px 0;
+    margin: 20px auto;
+    width: 300px;
+
+
+
+}

@@ -1,0 +1,44 @@
+/*HOME*/
+.home-content{
+	text-align: center;
+	margin-top:10%;
+	}
+
+.home-content h2{
+	text-align: center;
+	font-size: 1.5rem;
+	justify-content:space-around;
+	}
+.home-content p{
+	text-align: center;
+	font-size: 0.25rem;
+	justify-content:space-around;
+	}
+
+.home-content p{/*pタグへのフォントサイズと余白の指定*/
+	font-size: 1.125rem;
+	margin: 5px 0 3px;
+	}
+
+/*見出し*/
+.page-subtitle{
+	font-size: 0.55rem;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+/*ボタン*/
+.button{/*ボタンのクラスにフォントや色、角丸、余白の指定を入れている*/
+	font-size: 1.375rem;
+	color: #4F4F4F;
+	background: #FFFCFC;
+	border-radius: 5px;
+	border: solid;
+	border-color: #B1B1B1;
+	padding:18px 32px;
+}
+
+.button:hover{/*カーソルをボタンに重ねた時の色を指定 ちとテキトーな色にしてある*/
+	background: #F8F8F8
+	}

@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* 基本環境 */
+html{
+    font-size: 100%;
+}
+
+body{
+    font-family:"yu Gothic Medium","游ゴシック Medium",YuGothic,"游ゴシック体","ヒラギノ角ゴ Pro W3",sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+
+
+/*  ユーザー登録完了へ進む時  */
+.h1_u_reg_result{
+    color: rgb(255, 153, 0);
+    padding: 6px 0;
+    margin: 50px auto;
+    width: 480px;
+}
+
+
+.div_u_reg_result {
+    padding: 6px 0;
+    margin: 50px auto;
+    width: 480px;
+    margin: auto;
+}
+
+/*userRegisterResult.jsp内ボタン*/
+.a_u_reg_result_button{/*ボタンのクラスにフォントや色、角丸、余白の指定を入れている*/
+	color: #FFFFFF;
+        background: #82AD24;
+        border-radius: 10px;
+        border: solid;
+        border-color: #B1B1B1;
+        padding:7px 10px;
+        margin-bottom: 3px;
+        text-decoration: none;
+}
+.a_u_reg_result_button:hover{/*カーソルをボタンに重ねた時の色を指定 ちとテキトーな色にしてある*/
+	background: #F8F8F8
+
+}
